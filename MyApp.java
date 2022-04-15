@@ -1,17 +1,11 @@
 public class MyApp {
-  public static void main(String[]  args) {
-    System.out.print("[数当てゲーム]");
-    int ans = new java.util.Random().nextInt(10);
-    for (int i = 0; i < 5; i++) {
-      System.out.println("0~9の数字を入力してください");
-      int num = new java.util.Scanner(System.in).nextInt();
-      if (ans == num) {
-        System.out.println("あたり！");
-        break;
-      } else {
-        System.out.println("違います");
-      }
+  public static void main(String[] args) {
+    int[] moneyList = {121902, 8302, 55100};
+    for (int i = 0; i < moneyList.length; i++ ) {
+      System.out.println(moneyList[i]);
     }
-    System.out.println("ゲームを終了します");
+    for (int m : moneyList) {
+      System.out.println(m);
+    }
   }
 }
