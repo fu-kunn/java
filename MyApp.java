@@ -1,15 +1,12 @@
 public class MyApp {
-  public static int[] makeArray(int size) {
-    int[] newArray = new int[size];
-    for (int i = 0; i < newArray.length; i++) {
-      newArray[i] = i;
-    }
-    return newArray;
-  }
   public static void main(String[] args) {
-    int[] array = makeArray(3);
-    for (int i : array) {
-      System.out.println(i);
-    }
+    String name = "Minato";
+    int age = 18;
+    double height = 182.2;
+    char zodiac = '猿';
+    System.out.println("私の名前は" + name + "です");
+    System.out.println("歳は" + age + "です");
+    System.out.println("身長は" + height + "です");
+    System.out.println("干支は" + zodiac + "です");
   }
 }
