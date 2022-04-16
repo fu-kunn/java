@@ -1,12 +1,13 @@
 public class MyApp {
   public static void main(String[] args) {
-    String name = "Minato";
-    int age = 18;
-    double height = 182.2;
-    char zodiac = '猿';
-    System.out.println("私の名前は" + name + "です");
-    System.out.println("歳は" + age + "です");
-    System.out.println("身長は" + height + "です");
-    System.out.println("干支は" + zodiac + "です");
+    String title = "お誘い";
+    String address = "a@a";
+    String text = "今度飲みに行きませんか";
+    email(title, address, text);
+  }
+  public static void email(String title, String address, String text) {
+    System.out.println(address + "に、以下のメールを送信しました");
+    System.out.println("件名：" + title);
+    System.out.println("本文：" + text);
   }
 }
