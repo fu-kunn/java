@@ -1,10 +1,11 @@
 public class MyApp {
-  public static void main(String[] args) {
-   add(100, 200);
-   add(200, 50);
+  public static void printArray(int[] array) {
+    for (int element : array) {
+      System.out.println(element);
+    }
   }
-  public static void add(int x, int y) {
-    int ans = x + y;
-    System.out.println(x + "+" + y + "=" + ans );
+  public static void main(String[] args) {
+    int[] array = {2, 3, 4};
+    printArray(array);
   }
 }
