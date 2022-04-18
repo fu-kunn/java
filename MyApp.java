@@ -9,6 +9,7 @@ public class MyApp {
     double area = (bottom * height / 2);
     return area;
   }
+
   public static double calcCircleArea(double radius) {
     double area = radius * radius * 3.14;
     return area;
