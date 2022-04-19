@@ -12,7 +12,6 @@ public class Kamisama {
     m2.suffix = 'B';
 
     // System.out.println("勇者" + h.name + "を生み出したました");
-
     // 冒険の始まり
     h.slip();
     m1.run();
