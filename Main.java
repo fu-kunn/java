@@ -1,16 +1,15 @@
-import java.util.*;
-
-
 public class Main {
   public static void main(String[] args) {
-    Hero h1 = new Hero("齋藤");
-    Hero h2 = new Hero("鈴木");
-    Map<Hero, Integer> heroes = new HashMap<Hero, Integer>();
-    heroes.put(h1, 3);
-    heroes.put(h2, 7);
-    for (Hero key : heroes.keySet()) {
-      int value = heroes.get(key);
-      System.out.println(key.getName() + "が倒した敵＝" + value);
-    }
+    System.out.println("ようこそ占いの館へ");
+    System.out.println("あなたの名前を入力してください");
+    String name = new java.util.Scanner(System.in).nextLine();
+    System.out.println("あなたの年齢を入力してください");
+    String ageString  = new java.util.Scanner(System.in).nextLine();
+    int age = Integer.parseInt(ageString);
+    int fortune = new java.util.Random().nextInt(4);
+    fortune++;
+    System.out.println("占いの結果が出ました");
+    System.out.println(age + "歳の" + name + "さん、あなたの運気番号は" + fortune + "です");
+    System.out.println("1: 大吉 2: 中吉 3: 小吉 4: 凶");
   }
 }
